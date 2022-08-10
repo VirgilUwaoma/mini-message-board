@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h2 New Message
+  p
+    a(href="/") Home
+  
+  form(method="POST" action="/new")
+      label User
+        br
+        input(name="messageUser" type="text")
+      br
+      label Message
+        br
+        textarea(name="messageText", cols="25", rows="7")
+      br
+      input(type="submit", value="Send")
+  br
